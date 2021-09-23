@@ -22,5 +22,7 @@ namespace P01AplikacjaOkienkowaWstep
         {
             MessageBox.Show("Witaj " + txtImie.Text);
         }
+
+
     }
 }
