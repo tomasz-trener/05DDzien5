@@ -20,4 +20,5 @@ wzsytkie zapisy pogody przechowywane są w listboxie historia w zakładce histor
 po przejściu do zakładki historia , możesz podejrzeć wczesniej wyszukane miasta wraz z 
 temepraturami 
 
+Manager pogody w projekcie p03 w dniu 3 
 
