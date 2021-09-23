@@ -1,0 +1,23 @@
+﻿
+
+program złożony jest z 2 zakładek:
+
+ - pogoda
+ - historia
+
+ w zakłdace pogoda, w textboxie możesz wpisać miasto
+ po naciśniecu przyciesku ""Pogoda""
+ wyświetlana jest temperatura w aktualnym mieście 
+
+ dodatkowko wyświetlana jest ikonka:
+
+słońce gdy temperata jest wieksza od 10 stropni
+chmurkę gdy temp wynosi od 0 do 10
+lub chmurkę ze sniegiem gdy tempara jest ponizej 0 stopni 
+
+wzsytkie zapisy pogody przechowywane są w listboxie historia w zakładce historia 
+
+po przejściu do zakładki historia , możesz podejrzeć wczesniej wyszukane miasta wraz z 
+temepraturami 
+
+
