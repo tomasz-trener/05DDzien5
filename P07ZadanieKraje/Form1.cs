@@ -13,13 +13,14 @@ namespace P07ZadanieKraje
 {
     public partial class Form1 : Form
     {
-        string url = "http://tomaszles.pl/wp-content/uploads/2019/06/zawodnicy.txt";
+        const string url = "http://tomaszles.pl/wp-content/uploads/2019/06/zawodnicy.txt";
         ManagerZawodnikow mz;
         public Form1()
         {
             InitializeComponent();
-            mz = new ManagerZawodnikow(url); 
+            mz = new ManagerZawodnikow(url);     
             cbKraje.DataSource= mz.PodajKraje();
+            
         }
 
         private void btnWczytaj_Click(object sender, EventArgs e)
@@ -27,5 +28,7 @@ namespace P07ZadanieKraje
             lbDane.DataSource= mz.Filtruj(cbKraje.Text);
             lbDane.DisplayMember = "ImieNazwisko";
         }
+
+
     }
 }

@@ -37,7 +37,7 @@ namespace P07ZadanieKraje
             // cbKraje
             // 
             this.cbKraje.FormattingEnabled = true;
-            this.cbKraje.Location = new System.Drawing.Point(171, 35);
+            this.cbKraje.Location = new System.Drawing.Point(171, 18);
             this.cbKraje.Name = "cbKraje";
             this.cbKraje.Size = new System.Drawing.Size(145, 21);
             this.cbKraje.TabIndex = 0;
@@ -45,14 +45,14 @@ namespace P07ZadanieKraje
             // lbDane
             // 
             this.lbDane.FormattingEnabled = true;
-            this.lbDane.Location = new System.Drawing.Point(12, 62);
+            this.lbDane.Location = new System.Drawing.Point(12, 45);
             this.lbDane.Name = "lbDane";
             this.lbDane.Size = new System.Drawing.Size(304, 264);
             this.lbDane.TabIndex = 1;
             // 
             // btnWczytaj
             // 
-            this.btnWczytaj.Location = new System.Drawing.Point(12, 33);
+            this.btnWczytaj.Location = new System.Drawing.Point(12, 16);
             this.btnWczytaj.Name = "btnWczytaj";
             this.btnWczytaj.Size = new System.Drawing.Size(75, 23);
             this.btnWczytaj.TabIndex = 2;
@@ -64,7 +64,7 @@ namespace P07ZadanieKraje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(338, 369);
+            this.ClientSize = new System.Drawing.Size(338, 325);
             this.Controls.Add(this.btnWczytaj);
             this.Controls.Add(this.lbDane);
             this.Controls.Add(this.cbKraje);

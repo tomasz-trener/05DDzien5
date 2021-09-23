@@ -14,13 +14,11 @@ namespace P04BibliotekaZawodnicy
         public ManagerZawodnikow(string url)
         {
             this.url = url;
+            WczytajZawodnikow();
         }
 
         public string[] PodajKraje()
-        {
-            if (zawodnicy == null)
-                WczytajZawodnikow();
-
+        {       
             List<string> kraje = new List<string>();
             foreach (var z in zawodnicy)
                 if (!kraje.Contains(z.Kraj))
