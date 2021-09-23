@@ -82,5 +82,11 @@
   <ItemGroup>
     <Content Include="Zadanie.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\P04BibliotekaZawodnicy\P04BibliotekaZawodnicy.csproj">
+      <Project>{536f120f-adbb-4037-a502-1e4e53f06631}</Project>
+      <Name>P04BibliotekaZawodnicy</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
