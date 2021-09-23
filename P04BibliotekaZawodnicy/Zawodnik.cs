@@ -17,6 +17,14 @@ namespace P04BibliotekaZawodnicy
         public int Wzrost;
         public int Waga;
 
+        public string Wiersz
+        {
+            get
+            {
+                return $"{Id_zawodnika};{Id_trenera};{Imie};{Nazwisko};{Kraj};{DataUrodzenia};{Wzrost};{Waga}";
+            }
+        }
+
         public string ImieNazwisko { get { return Imie + " " + Nazwisko; } }
 
         // poniewaz nie ma w tej klasie zdefiniowanych żadnych innych konstruktórow 

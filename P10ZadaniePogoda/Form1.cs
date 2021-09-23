@@ -20,20 +20,29 @@ namespace P10ZadaniePogoda
 
         private void btnPogoda_Click(object sender, EventArgs e)
         {
+     
             ManagerPogody mp = new ManagerPogody();
-            double temp= mp.PodajTemperature(txtNazwaMiasta.Text);
-            lblWynik.Text = Convert.ToString(temp);
 
-            pcbObrazek.Visible = true;
+            try
+            {
+                double temp = mp.PodajTemperature(txtNazwaMiasta.Text);
+                lblWynik.Text = Convert.ToString(temp);
+                pcbObrazek.Visible = true;
+                if (temp > 10)
+                    pcbObrazek.Image = Resources.sun;
+                else if (temp > 0)
+                    pcbObrazek.Image = Resources.cloud;
+                else
+                    pcbObrazek.Image = Resources.snow;
 
-            if(temp > 10)
-                pcbObrazek.Image = Resources.sun;
-            else if (temp > 0)
-                pcbObrazek.Image = Resources.cloud;
-            else
-                pcbObrazek.Image = Resources.snow;
-
-            lbHistoria.Items.Add(txtNazwaMiasta.Text + " " + temp);
+                lbHistoria.Items.Add(txtNazwaMiasta.Text + " " + temp);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Bład  podczas pobierania temperatury", "Błąd", MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+           
 
         }
     }

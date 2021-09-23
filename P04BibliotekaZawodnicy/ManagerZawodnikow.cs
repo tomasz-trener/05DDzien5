@@ -73,5 +73,10 @@ namespace P04BibliotekaZawodnicy
             // ostataeczenie zwracamy tę listę przeroboną na tablice
             return przefiltrowani.ToArray();
         }
+
+        public Zawodnik[] PodajWszystkichZawodnikow()
+        {
+            return zawodnicy;
+        }
     }
 }
