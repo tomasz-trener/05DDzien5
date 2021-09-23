@@ -15,12 +15,25 @@ namespace P04BibliotekaZawodnicy
         {
             this.url = url;
         }
+
+        public string[] PodajKraje()
+        {
+            if (zawodnicy == null)
+                WczytajZawodnikow();
+
+            List<string> kraje = new List<string>();
+            foreach (var z in zawodnicy)
+                if (!kraje.Contains(z.Kraj))
+                    kraje.Add(z.Kraj);
+            
+            return kraje.ToArray();
+        }
         public void WczytajZawodnikow() // ta metoda uzupełnia prywatne pole zawodnicy
         {
             string dane = new WebClient().DownloadString(url);
             // splitujemy po znaku nowej linii
             // uzwamy przy okazji enumeratora, którego dziś poznaliśmy 
-            string[] wiersze = dane.Split(new string[] { "\r\n" },  StringSplitOptions.RemoveEmptyEntries);
+            string[] wiersze = dane.Split(new string[] { "\r\n" }, StringSplitOptions.RemoveEmptyEntries);
             // przyogotwujemy sobie tablice zawodników 
             // o długości mniejszej o 1 ponieważ pomijamy nagłowek 
             zawodnicy = new Zawodnik[wiersze.Length - 1];
@@ -47,9 +60,9 @@ namespace P04BibliotekaZawodnicy
                 // jak uzupełnimy wszystkie pola to mozemy dodać
                 // tego zawodnika do  wczesniej utworzonej tablicy
                 zawodnicy[i - 1] = z;
-            }     
+            }
         }
-        
+
         public Zawodnik[] Filtruj(string kraj) // następnie filtrowanie jako źródło danych wykorzystuje prywatne pole zawodnicy 
         {
             // tworzymy liste zawodnikow bo nie wiemy ilu ich bedzie z danego kraju
