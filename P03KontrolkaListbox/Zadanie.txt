@@ -1,0 +1,8 @@
+﻿
+
+
+1) Z solucji dzien 3 z projektu p09 utwórz nową bibliotkę w soludzji dzien5 
+     Nazwa biblioteki: P04BibliotekaZawodnicy
+2)  podepnij biblotkę pod porjekt p03 w dzien 3 
+3) korzystając z klasy ManagerZawodnikow pobierz zawodników z danego kraju, wczytanego z textboxa w UI 
+
