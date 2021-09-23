@@ -1,0 +1,13 @@
+﻿
+
+1) zmodyfikuj bibliotkę zawodnicy p04
+ tak aby dodać do niej metodę , która zwraca tablicę stringów 
+ reprezentująca unikalne kraje zawodników. Nazwa metody: "PodajKraje"
+
+2) w projekcie p07 dodaj kontrolkę combobox, która jest listą rozwijaną i działa
+na tej samej zasadzie co listbox i zbinduj te kraje z tą kontrolką
+
+3) po wcieśniećiu przycisku wczytaj wyświetlani są zawdonicy w listbox z danego kraju , wybranego
+w kontrolce combobox 
+
+jest metoda contains w liście , która sprawdza czy dany element jest w liście 
