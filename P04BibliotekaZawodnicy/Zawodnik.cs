@@ -11,11 +11,13 @@ namespace P04BibliotekaZawodnicy
         public int Id_zawodnika;
         public int? Id_trenera;
         public string Imie;
-        public string Nazwisko;
+        public string Nazwisko { get; set; }
         public string Kraj;
         public DateTime DataUrodzenia;
         public int Wzrost;
         public int Waga;
+
+        public string ImieNazwisko { get { return Imie + " " + Nazwisko; } }
 
         // poniewaz nie ma w tej klasie zdefiniowanych żadnych innych konstruktórow 
         // to obecnie jedyną możliwością jest stworzenie nowego zawodnika używajac 

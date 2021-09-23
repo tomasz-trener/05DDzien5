@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03KontrolkaListbox", "P03K
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04BibliotekaZawodnicy", "P04BibliotekaZawodnicy\P04BibliotekaZawodnicy.csproj", "{536F120F-ADBB-4037-A502-1E4E53F06631}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05DataBinding", "P05DataBinding\P05DataBinding.csproj", "{CE628F27-8109-45A1-BE1B-989CB4B107EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06RzutowanieDanych", "P06RzutowanieDanych\P06RzutowanieDanych.csproj", "{3CC49A8D-9C84-4FDA-9D17-FFB6C07B3C90}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{536F120F-ADBB-4037-A502-1E4E53F06631}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{536F120F-ADBB-4037-A502-1E4E53F06631}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{536F120F-ADBB-4037-A502-1E4E53F06631}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE628F27-8109-45A1-BE1B-989CB4B107EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE628F27-8109-45A1-BE1B-989CB4B107EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE628F27-8109-45A1-BE1B-989CB4B107EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE628F27-8109-45A1-BE1B-989CB4B107EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CC49A8D-9C84-4FDA-9D17-FFB6C07B3C90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CC49A8D-9C84-4FDA-9D17-FFB6C07B3C90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CC49A8D-9C84-4FDA-9D17-FFB6C07B3C90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CC49A8D-9C84-4FDA-9D17-FFB6C07B3C90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
