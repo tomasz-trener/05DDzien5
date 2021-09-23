@@ -78,5 +78,24 @@ namespace P04BibliotekaZawodnicy
         {
             return zawodnicy;
         }
+
+        public void Usun(Zawodnik z)
+        {
+            List<Zawodnik> zawodnicyList = zawodnicy.ToList();
+            zawodnicyList.Remove(z);
+            zawodnicy = zawodnicyList.ToArray();
+        }
+
+        public void Aktualizuj(Zawodnik[] zawodnicy)
+        {
+            this.zawodnicy = zawodnicy;
+        }
+
+        public void Dodaj(Zawodnik z)
+        {
+            List<Zawodnik> zawodnicyList = zawodnicy.ToList();
+            zawodnicyList.Add(z);
+            zawodnicy = zawodnicyList.ToArray();
+        }
     }
 }
